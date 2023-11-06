@@ -1,4 +1,4 @@
-# The worst way to calculate pi in Python
+# The worst way to calculate Π in Python
 
 ### This project shows what should be avoided when creating Python projects.
 
