@@ -1,0 +1,11 @@
+1. usunięcie zmiennych globalnych
+2. usunięcie nadmiarowych inicjalizacji zmiennych(np b= 0, i dalej b = 0)
+3. zmiana nazw iteratorów na bardziej zrozumiałe
+4. usunięcie nadmiarowych printów
+5. usunięci importowania wszystkiego za pomocą "*"
+6. zamiana wielu wywołań na pętlę for
+7. poszerzenie bloku try
+8. usunięcie nadmiarowej funkcji
+9. usunięcie dopisywania "finished" do wyników 
+10. archiwizacja wszystkich wyników aproksymacji
+11.
