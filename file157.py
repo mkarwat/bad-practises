@@ -1,30 +1,28 @@
-def enumerate(pi):
+from file87 import *
+
+def print_pi_container(pi):
     for hello in pi.a:
         print(f'Next element: {hello}')
-from file87 import *
-try:
-    my_pi = pi_container()
-    pi_gen = foo(5)
-    my_pi.mth(pi_gen.__next__())
-    my_pi.mth(pi_gen.__next__())
-    my_pi.mth(pi_gen.__next__())
-    my_pi.mth(pi_gen.__next__())
-    my_pi_2 = pi_container()
-    my_pi.mth(pi_gen.__next__())
-    my_pi.mth(pi_gen.__next__())
-    my_pi.mth(pi_gen.__next__())
-except:
-    print('something went horribly wrong :(')
-pIgEn3 = foo(194)
-for the_variable_that_contains_next_approximations_of_pi_from_generator in range(23):
-    my_pi_2.mth(next(pIgEn3))
-my_pi_3 = pi_container()
-pi_gen = foo(6)
-my_pi_3.mth([i for i in list(pi_gen)])
+
+pi_gen = pi_generate(15)
+my_pi = PiContainer()
+my_pi.mth([pi_approx for pi_approx in pi_gen])
+
+pi_gen_2 = pi_generate(194)
+my_pi_2 = PiContainer()
+
+my_pi_2.mth([pi_approx for pi_approx in pi_gen_2])
+
+pi_gen_3 = pi_generate(6)    
+my_pi_3 = PiContainer()
+my_pi_3.mth([pi_approx for pi_approx in pi_gen_3])
+
 print('my first pi')
-enumerate(my_pi)
+print_pi_container(my_pi)
 print('my second pi')
-enumerate(my_pi_2)
-new_file = open('some-file.txt', 'w')
-new_file.write(f'my best pi: {my_pi_3.a[-1]}')
-new_file.close()
+print_pi_container(my_pi_2)
+print('my third pi')
+print_pi_container(my_pi_3)
+
+with open('best-pi.txt', 'w') as best_pi:
+    best_pi.write(f'my best pi: {my_pi_3.a[-1]}')
