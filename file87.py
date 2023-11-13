@@ -12,9 +12,8 @@ def estimate(x):
     c = 1
     for i in range(x):
         if i % 2 == 0:
-            b += 4 / c #this is a very important operation in calculating pi according to documentation that is provided in a seperate file in this repository, please analyse this file before using!
+            b += 4 / c 
         else:
             b -= 4 / c
         c += 2
         yield b
-    yield "finished"
