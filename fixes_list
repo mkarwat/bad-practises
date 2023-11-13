@@ -1,0 +1,9 @@
+1. removed unessesary global variables
+2. improved syntax
+3. change name of iterators
+4. change name of classes to camel case convention
+5. renamed function enumerate that was shadowing built-in function
+6. moved import statement at the beggining of the file
+7. renamed function fun
+8. uniformed variable naming
+9. change exception description
