@@ -1,11 +1,44 @@
-1. usunięcie zmiennych globalnych
-2. usunięcie nadmiarowych inicjalizacji zmiennych(np b= 0, i dalej b = 0)
-3. zmiana nazw iteratorów na bardziej zrozumiałe
-4. usunięcie nadmiarowych printów
-5. usunięci importowania wszystkiego za pomocą "*"
-6. zamiana wielu wywołań na pętlę for
-7. poszerzenie bloku try
-8. usunięcie nadmiarowej funkcji
-9. usunięcie dopisywania "finished" do wyników 
-10. archiwizacja wszystkich wyników aproksymacji
-11.
+błędy:
+1. zmiana nazwy pilku 1 
+2. zmiana nazwy pliku 2
+3. usunięcie zmiennej globalnej b
+4. usunięcie zmiennej globalnej a
+5. nazwa klasy typu camelcase -> zmiana nazwy
+6. usunięcie listy w konstruktora, zamiana => a:list[float] | none = none, 
+if a is None:
+	self.a = list()
+else
+	self.a = a
+7. zmiana nazwy "a" na nazwę "my_pies" 
+8. zmiana nazwy "mth" na "add_pi"
+9. zmiana nazwy z powyżsszej funkcji z "x" na "next_pi"
+10. dodanie przy if isistance(next_pi, list)
+11. zmiana nazwy z foo na calc_pi
+12. zmiana nazy iteratora z hello na i
+13. poprawki na komentarzu który prowadzi do pliku który nie istnieje w katalogu
+14. yield'finished' jest niepotrzebne
+15. zmiana nazwy enumerate z końca kodu na enumerate_pi żeby nie przykrywała innej o tej samej nazwie
+16. zmiana iteratora z ''hello' na next_pi
+17. dodanie if __name__ == '__main__'
+kolejny plik: 
+18. usunięcie niepotrzebnego inicjalizowania tej samej funkcji w dwuch miejscach
+19. import dwóch funkcji zamiast wszystkiego ponieważ funkcje nakładają się na siebie
+20. zmiana nazwy iteratora w pętli
+21. dodanie my_pi.add do funkcji for, zapewnia odpowiednią liczbę wywołań  
+22. zmiana wiadomości błędu na znaczącą dla użytkownika
+23. dodanie do except typu błędu które chcemy obsłużyć np ValueError 
+24. można dodać kolejne exceptions dla lepszej obsługi błędów 
+25. zmiana nazwy z pIgEn na bardziej czytelną 
+26. "uszczuplenie" try żeby wiedzieć co się dzieje w try podczas iteracji a nie podczas tworzenie kontenera
+27. zmiana za długiej nazwy na krótszą np-> "-"
+28. można dodać komentarz do liczby w wywołaniu aprox_number = 194
+29. dodanie komentarza do pętli dlaczego mając 195 wartości z iteratora w pętli używamy tylko 23 wartości 
+30. my_pi_3.add_pi(list(pi_gen)) pominięcie niejasnych i niepotrzebnych konwersji
+31. with open('nazwa')..., żeby nie zamykać ręcznie pliku
+32. zamknięcie praawie(bez enumerate) kodu do funkcji, żeby nie było kolizji oznaczeń
+33. zmiana nazwy pliku do którego zapisujemy
+34. zapis do pliku najlepszego pi my_pi_3_best dodając @property 
+def best(self)
+return best pies
+35. można dodatkowo dodać bibliotekę i funkcjonalności Path
+
