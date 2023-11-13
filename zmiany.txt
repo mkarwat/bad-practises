@@ -1,3 +1,4 @@
+Krzysztof Płonka
 błędy:
 1. zmiana nazwy pilku 1 
 2. zmiana nazwy pliku 2
