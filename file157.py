@@ -1,30 +1,60 @@
-def enumerate(pi):
+class PiContainer:
+    def __init__(self, a=None):
+        self.a = a if a is not None else []
+
+    def mth(self, x):
+        if isinstance(x, list):
+            self.a += x
+        else:
+            self.a.append(x)
+
+
+def calculate_pi(x):
+    b = 0
+    c = 1
+    for hello in range(x):
+        if hello % 2 == 0:
+            b += 4 / c
+        else:
+            b -= 4 / c
+        c += 2
+        yield b
+    yield 'finished'
+
+
+def print_pi_values(pi):
     for hello in pi.a:
         print(f'Next element: {hello}')
-from file87 import *
+
+
 try:
-    my_pi = pi_container()
-    pi_gen = foo(5)
-    my_pi.mth(pi_gen.__next__())
-    my_pi.mth(pi_gen.__next__())
-    my_pi.mth(pi_gen.__next__())
-    my_pi.mth(pi_gen.__next__())
-    my_pi_2 = pi_container()
-    my_pi.mth(pi_gen.__next__())
-    my_pi.mth(pi_gen.__next__())
-    my_pi.mth(pi_gen.__next__())
-except:
-    print('something went horribly wrong :(')
-pIgEn3 = foo(194)
-for the_variable_that_contains_next_approximations_of_pi_from_generator in range(23):
-    my_pi_2.mth(next(pIgEn3))
-my_pi_3 = pi_container()
-pi_gen = foo(6)
-my_pi_3.mth([i for i in list(pi_gen)])
-print('my first pi')
-enumerate(my_pi)
-print('my second pi')
-enumerate(my_pi_2)
-new_file = open('some-file.txt', 'w')
-new_file.write(f'my best pi: {my_pi_3.a[-1]}')
-new_file.close()
+    my_pi = PiContainer()
+    pi_gen = calculate_pi(5)
+    my_pi.mth(next(pi_gen))
+    my_pi.mth(next(pi_gen))
+    my_pi.mth(next(pi_gen))
+    my_pi.mth(next(pi_gen))
+    my_pi_2 = PiContainer()
+    my_pi.mth(next(pi_gen))
+    my_pi.mth(next(pi_gen))
+    my_pi.mth(next(pi_gen))
+except Exception as e:
+    print(f'Something went horribly wrong: {e}')
+
+pi_gen3 = calculate_pi(194)
+for _ in range(23):
+    my_pi_2.mth(next(pi_gen3))
+
+my_pi_3 = PiContainer()
+pi_gen = calculate_pi(6)
+my_pi_3.mth(list(pi_gen))
+
+print('My first pi:')
+print_pi_values(my_pi)
+print('My second pi:')
+print_pi_values(my_pi_2)
+
+with open('some-file.txt', 'w') as new_file:
+    new_file.write(f'My best pi: {my_pi_3.a[-1]}')
+
+print('Code executed successfully.')
