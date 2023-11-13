@@ -1,30 +1,34 @@
-def enumerate(pi):
+from file87 import *
+
+
+def count(pi):
     for hello in pi.a:
         print(f'Next element: {hello}')
-from file87 import *
+
+
 try:
-    my_pi = pi_container()
-    pi_gen = foo(5)
-    my_pi.mth(pi_gen.__next__())
-    my_pi.mth(pi_gen.__next__())
-    my_pi.mth(pi_gen.__next__())
-    my_pi.mth(pi_gen.__next__())
-    my_pi_2 = pi_container()
-    my_pi.mth(pi_gen.__next__())
-    my_pi.mth(pi_gen.__next__())
-    my_pi.mth(pi_gen.__next__())
+    pi_container = PiContainer()
+    pi_approximated = pi_approx(5)
+    pi_container.mth(pi_approximated.__next__())
+    pi_container.mth(pi_approximated.__next__())
+    pi_container.mth(pi_approximated.__next__())
+    pi_container.mth(pi_approximated.__next__())
+    pi_container_2 = PiContainer()
+    pi_container.mth(pi_approximated.__next__())
+    pi_container.mth(pi_approximated.__next__())
+    pi_container.mth(pi_approximated.__next__())
 except:
-    print('something went horribly wrong :(')
-pIgEn3 = foo(194)
-for the_variable_that_contains_next_approximations_of_pi_from_generator in range(23):
-    my_pi_2.mth(next(pIgEn3))
-my_pi_3 = pi_container()
-pi_gen = foo(6)
+    print('unknown exception')
+pi_approximated2 = pi_approx(194)
+for i in range(23):
+    pi_container_2.mth(next(pi_approximated2))
+my_pi_3 = PiContainer()
+pi_gen = pi_approx(6)
 my_pi_3.mth([i for i in list(pi_gen)])
-print('my first pi')
-enumerate(my_pi)
-print('my second pi')
-enumerate(my_pi_2)
-new_file = open('some-file.txt', 'w')
+print('first pi approximation')
+count(pi_container)
+print('second pi approximation')
+count(pi_container_2)
+new_file = open('pi_approx.txt', 'w')
 new_file.write(f'my best pi: {my_pi_3.a[-1]}')
 new_file.close()
