@@ -1,0 +1,27 @@
+1. Modified PiContainer class name - class names should be written using PascalCase
+2. Deleted unused globals: variables b and c are used locally only by leibniz_pi_generator function so should be moved there.
+3. Formatet operators so that there is whitespace before and after it - there should be whitespace before and after operator.
+4. Modified 'hello' iterator in for loop - iterators in loops should be meaningful or just common if they simply are used purely for iterating (such as i,x,y,j)
+5. About this bizzare comment: It is deffinetely too long. If using this API should be preceded with reading docummentation then it should be written before function body.
+   If this fragment is mentioned in docummentation, the name should be provided and location in file, e.g. leibniz_pi_generator_docummentation 5.1 calculating'
+6. Remove unnecessary prints. Don't realy see the point to print All 'functions are defined'. If they weren't, interpreter would notify us.
+7. Modify name of variable in PiContainer: To get the better grasp of what the class is for, I'd change a to pi. It is PiContainer after all.
+8. Modify leibniz_pi_generator name - leibniz_pi_generator seems to be some kind of generator, let's change the name to indicate that
+9. Remove unnecessary yield "finish" - Exception will be raised when finished
+10. Modify PiContainer.append_container name - i think append_container would suit this method name.
+11. Rename file names so they are meaningful and describe the content - i saw it at the beginning but needed to take a grasp of what the program is designed for.
+    One of them is an interface to calculate approximation using leibniz formula so we could name it pi_utils. Another one is the program that
+    calculates the pi value so simple rename it to main.py
+12. Moved import to the top of the file - always put them at the beginning
+13. We also exactly know what fanction we are using from pi_utils, so we could just specify them in import
+14. Move enumerate to PiContainer class - it seems as this function is designed strictly for usage of this class. Let's keep it close to the interface
+15. open(), close() file operations could be substituded with contex manager. Also f is just fine, we all no it is file to be opened
+16. Added empty lines between code blocks - let's give it some air to make it more readable
+17. Move variables declarations to the top of the code block - if it possible, it is more readable to stick to such convention.
+18. Repeatable code lines should be substituded with for loop - I am no a purist, but it just looks unpleasent
+19. Modify pIgEn3 variable name - other variables are written using 'snake-case', let's stick to that
+20. Modify the name of varaible the_variable_that_contains_next_approximations_of_pi_from_generator - a lil' too long, the same case as 'hello'.
+    What's more it can be substituded with _ as that variable is unused
+21. Added minimal value property to the class - it is better to keep it in the class interface to not to bother user with such problems
+22. Add path in main - specify path using pathlib 
+23. Catching exception should be specified using particular type o f exception
