@@ -1,0 +1,24 @@
+1. Nawy plikow nieczytelne -> 157 main, 87 pi_generator
+2. Zmienne globalnych się nie wykorzystuje
+3. Nazwa klasy nie zapisana konwencją Camel
+4. Zła nazwa funkcji mth
+5. Zmienny argument w konstruktorze (mutable)
+6. Nieopisowe nazwy zmiennych w klasie PiContainer
+7. Lepiej wykorzystać isinstance
+8. Nazwa funkci foo niepoprawna
+9. Brak komentarza działania funkcji foo
+10. Nazwa parametru funkcji foo
+11. Komentarz w funkcji zbyt długi oraz nieinformatywny
+12. Niepotrzebny "yield finished", zwraca inny typ
+13. Enumarate przysłania wbudowaną funkcję
+14. Brak if __main__ w pliku 87
+15. Import powinien być na samej górze
+16. Nie powinniśmy importować wszystkiego z całej biblioteki
+17. Większość pliku powinna byc w funkcji main
+18. __next__() powinno być w pętli
+19. Formatowanie pliku 157
+20. Zawsze jak jest except powinno się łapać wyjątki
+21. Zawsze powinno być raise w wyrzuconym wyjątku
+22. Zła liczba iteracji w bloku try
+23. Niepodpisane argumenty funkcji
+24. Nie wykorzystuje sie funkcji close()
