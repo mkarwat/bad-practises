@@ -1,35 +1,40 @@
-b = 0
-c = 0
+class PiContainer:
+    def __init__(self, elements=None):
+        if elements is None:
+            elements = []
+        self.elements = elements
 
-
-class pi_container:
-    def __init__(self, a=list()):
-        self.a = a
-
-    def mth(self, x):
-        if type(x) == list:
-            self.a += x
+    def add(self, item):
+        if isinstance(item, list):
+            self.elements.extend(item)
         else:
-            self.a.append(x)
+            self.elements.append(item)
 
 
-def foo(x):
-    global b
-    global c
-    b = 0
-    c=1
-    for hello in range(x):
-        if hello % 2 == 0:
-            b += 4 / c#this is a very important operation in calculateing pi according to documentation that is provided in a seperate file in this repository, please analyse this file before using!
+def calculate_pi(iterations):
+    pi_approximation = 0
+    denominator = 1
+    for i in range(iterations):
+        if i % 2 == 0:
+            pi_approximation += 4 / denominator
         else:
-            b -= 4 / c
-        c += 2
-        yield b
-    yield 'finished'
-
-def enumerate(pi: pi_container):
-    for hello in pi.a:
-        print(hello)
+            pi_approximation -= 4 / denominator
+        denominator += 2
+        yield pi_approximation
 
 
-print('All functions are defined')
+def print_elements(container):
+    for element in container.elements:
+        print(element)
+
+
+if __name__ == "__main__":
+    print('All functions are defined')
+
+    # Example usage
+    pi_calculator = calculate_pi(10)
+    pi_container = PiContainer()
+    for approximation in pi_calculator:
+        pi_container.add(approximation)
+
+    print_elements(pi_container)
