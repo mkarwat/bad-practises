@@ -30,11 +30,4 @@ def print_elements(container):
 
 if __name__ == "__main__":
     print('All functions are defined')
-
-    # Example usage
-    pi_calculator = calculate_pi(10)
-    pi_container = PiContainer()
-    for approximation in pi_calculator:
-        pi_container.add(approximation)
-
-    print_elements(pi_container)
+    
