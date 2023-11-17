@@ -1,0 +1,26 @@
+file 157.py:
+moved imports to the top of the file so all the imports are in one place
+changed import from asterisk to functions and objects that are actually used
+changed new_file to result_file
+removed enumerate as it overwrote enumerate from file87 AND class enumerate
+removed pIgEn3 and the completely unnecessary loop and changed it to a single function call, kept 23
+changed something went horribly wrong message to an actual error message
+changed result_file content to a string instead of a formatted string
+changed my_pi from variables to a list so we can dynamically add another calculation
+also moved the declaration from try (if try did not succeed we wouldn't have variables declared)
+encapsulated prints in if checking if we even have that many variables
+CHANGED NAME to main.py
+
+file87.py:
+removed globals, we avoid globals
+foo: changed iterator to i
+changed the comment
+changed the shenanigans with type checking so that self.a (now self.pi_list) is always a list
+removed all functions are defined print (that is unnecessary)
+changed enumerate to implementing __str__ method
+changed hello to element as we are in a foreach loop
+changed if to yoda notation to avoid accidental assignment when writing code
+changed x in foo to num_of_operations
+changed foo to calc_pi
+removed yield-monstrosity functionality
+CHANGED NAME TO pi_calculator.py
