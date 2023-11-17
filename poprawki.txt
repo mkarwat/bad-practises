@@ -1,0 +1,21 @@
+Zmiany:
+1. Zmiana nazwy plików na main i function
+2. Zmiany nazw zmiennych i funkcji w obu plikach, aby miały jakiś sens, a nie były losowe
+3. Plik function.py:
+- usunięcie globalnych zmiennych b i c
+- poprawa nazwy klasy - zaczyna się od dużej litery i nie posiada znaku '_'
+- poprawa przyjmowanego argumentu przez konstruktor klasy, żeby nie był modyfikowalny
+- poprawienie sprawdzania czy podany argument jest listą (if isinstance(next_pies, list))
+- usunięcie zbędnych komentarzy
+- dodanie opisu funkcji calc_pi()
+- zmiana nazwy funkcji enumerate na enumerate_pi, aby funkcja wbudowana nie była przykryta
+- wypisywanie 'All functions are defined' tylko gdy uruchomimy plik function.py
+4. Plik main.py
+- przeniesienie importu funkcji z pliku function.py na samą górę oraz zaimportowanie tylko niezbędnych funkcji
+- przeniesienie deklaracji zmiennych w takie miejsca, żeby nie były deklarowane zbyt wcześnie
+- zastąpienie wielokrotnego wywołania metody add_pi pętlą for
+- obsługa rzucanych wyjątków
+- dodanie opisów podawanych argumentów do funkcji np. calc_pi(approx_level=194)
+- użycie 'with' do pracy na pliku
+- dodanie nowej metody klasy PiContainer z dekoratorem @property, która zwraca najlepszą wartość
+- umieszczenie wszytskiego w funkcji main oraz wywołanie jej
