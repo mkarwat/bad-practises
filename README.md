@@ -5,7 +5,7 @@
 5) zmienne powinny miec nazwy zrozumiale dla czytajacego kod
 6) zamiast type(x) == list lepiej uzyc isinstance
 7) nazwa funkcji foo() jest niezrozumiala
-8) komentarz w fukcji foo nie wnosi nic waznego, lepiej zastopic do dokladnym opisem funcji w docstringu
+8) komentarz w fukcji foo nie wnosi nic waznego, lepiej zastopic go dokladnym opisem funkcji w docstringu
 9) niepotrzebne yield 'finished', ktore zwraca inny typ
 10) brak uzycia if __name__ == '__main__' w plikach
 11) stworzenie fukcji enumerate, ktorej nazwa przyslania funkcje wbudowana
