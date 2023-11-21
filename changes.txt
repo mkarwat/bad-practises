@@ -1,0 +1,31 @@
+file87.py:
+- renamed filename **file87.py** into **pi_class.py**
+- removed global variables form file
+- renamed class "pi_container" into "PiContainer"
+- changed "type(x) == list" into "isinstance(new_pi, list)"
+- added "best" property
+- removed unnecessary comments
+- removed "yield 'finished'"
+- moved print into main
+
+file157.py:
+- renamed filename **file157.py** into **main.py**
+- moved imports into the top of file
+- import specific classes and functions and "print_pi" under a different name
+- move "PiContainer" creation outside try
+- added "num_approx" with loop
+- added error type case
+- removed unused iterator from loop and changed it into "_"
+- simplify "[i for i in list(pi_gen)]" into "list(pi_gen)"
+- added "path" variable
+- changed file handling
+- moved everything into main function
+
+overall changes:
+- improved code readability and stylings
+- added static typing
+- renamed some variables and functions
+
+
+
+
