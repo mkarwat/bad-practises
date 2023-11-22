@@ -1,0 +1,17 @@
+1. Commit names are not descriptive ("very important commit")
+2. File names have no meaning, no clear main file -> changed names to main.py and pi_functions.py
+3. Unnecessary global variables.
+4. Function "foo" uses mathematical variables with meaningless names (b,c) so there
+   should be a description of used formulas instead of a obscure comment.
+5. Class names should be written in camelCase not snake_case
+6. "*" symbol in imports should be avoided if possible, imports should select only required modules
+7. Files should be open with "with" command.
+8. Except should be used to catch errors
+9. "try" code block is too big, too many different exception could happen
+10. "my_pi.mth(pi_gen.__next__())" should be optimized in loop
+11. Variables should have meaningful names.
+12. Instead of "type(x) == list" there should be used "isistance()"
+13. foo() should be remaned to a meaningful name -> approximate_pi
+14. "yield 'finished'" return wrong type -> should be removed
+15. missing "if __name__ == '__main__'" in main file
+16. "enumerate" is a already used name so it causes unexpected redefinition -> should be renamed
