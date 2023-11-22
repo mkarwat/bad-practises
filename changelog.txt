@@ -1,0 +1,15 @@
+1. zmieniono nazwy klas i funkcji zgodnie z (PascalCase, snake_case)
+2. nazwy zmiennych i funkcji były niezrozumiałe, zmieniono na nazwy przyjazne użytkownikowi
+3. zmienne globalne to zła praktyka i może prowadzić do problemów
+4. zamiast type(x) == list lepiej uzyc funkcji isinstance
+5. komentarz w funkcji jest za długi i nic nie wnosi
+6. odwołania do dokumentacji lepiej zawierać na początku jakiejś funkcji
+7. komentarze lepiej tworzyć krótkie i podzielone na kilka linii lub skorzystać z docstringa
+8. yield 'finished' jest niepotrzebne
+9. brak if __name__ == '__main__'
+10. importowanie bibliotek dodaje się na początku pliku
+11. formatowanie kodu nie istniało, przez co był nieczytelny
+12. w funkcji try lepiej sprawdzać jak najmniej rzeczy na raz
+13. brak łapania wyjątku raise
+14. nienajlepszy sposób na otwieranie i zapisywanie danych do pliku
+15. ogólne poprawki w kodzie w pliku main.py zgodne z dobrymi praktykami
