@@ -1,0 +1,16 @@
+- renamed file names so they are meaningful and describe them
+- modified PiContainer class name (for classes PascalCase should be used)
+- modified class variables' names and functions' names t more meaningful
+- deleted unnecessary globals
+- aplied correct fomating (added spaces)
+- changed iterator 'hello' to something more meaningful
+- comment in function 'calculate_pi' definitely too long, does not contain any sppecific information (deleted)
+- removed unnecessary yield "finish" (exception will be raised when finished)
+- move enumerate to PiContainer class and changed its name since the function under this name already exists
+- moved import to the top of the file and changed from '*' to specific functions, classes (no point to import all of them)
+- repeatable code lines should be written with loops
+- catching exceptions should be specified (not catching all of them)
+- added Path import to specify the path of the file 
+- writing to file can be done with simple "with open", much easier (don't have to remember about closing the file)
+- changed iterator 'varaible the_variable_that_contains_next_approximations_of_pi_from_generator' to '_', because anyway it is not used
+- added value property to the class 'best_approx', better to keep such things in class
