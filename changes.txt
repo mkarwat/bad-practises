@@ -1,0 +1,18 @@
+Oba pliki powinny mieć nazwę wskazującą na to co się w nich dzieje
+file87 (function):
+1.Zmienne początkowe a i b powinny mieć nazwę nadającą im znaczenie
+2.Klasa pi_container powinna być napisana CamelCase
+3.Nie powinno się używać w konstruktorze listy która jest mutowalna
+4.Zamiast type(x) użyć isinstance
+5.Komentarze powinny być zrozumiałe
+6.Zmienne a i b powinny być zdefiowane w funkcji foo gdzie są wykorzystywane a nie na początku pliku
+7.Funkcja nie powinna być nazwana 'enumerate' ponieważ przysłania wbudowaną funkcję o takiej samej nazwie
+8.Nadmiarowy yield finished który zwraca inny typ
+9.Nazwa funkcji "foo" błędna, nazwa powinna wskazywać co dana funkcja robi
+
+file157 (main):
+1.Import powinien być umieszczony na początku pliku
+2.Nie powinno się importować z gwiazdką tylko importować konkretny moduł który chcemy użyć
+3.Zbyt dużo kodu w bloku try
+4.Po except powinniśmy złapać wyjątek
+5.Zmienna the_variable_that_contains_next_approximations_of_pi_from_generator ma zbyt długą nazwę
