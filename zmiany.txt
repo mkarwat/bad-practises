@@ -1,0 +1,32 @@
+File 87
+w 5 -> zmiana nazewnictwa klasy na z wielkiej litery
+w 6 -> nie powinno używać się modyfikowalych argumentów
+w 7 -> dodajemy sprawdzenie czy a nie jest None
+w 9 -> nazwa funkcji powinna mniej więcej mówić co funkcja robi
+w 16 -> jw.
+w 17-18 nie ma potrzeby używania zmiennych globalnyvh
+w 20 -> spacje przy zanku równości
+w 23 -> komentarz za długi, podzieliłem na dwa paragrafy
+        No i w ogóle bez sensu powinien wskazywać co gdzie i jak
+w 30 -> nazwa enumerate to nazwa wbudowanej funkcji, zmieniam aby uniknąc pomyłek
+w 31-32 -> value zamiast halo do zrozumienia funkcj
+w 35 -> print jest poza jakąkolwiek funkcją, umieszczam w mainie
+w 1-4 -> nie ma potrzeby inicjalizować tych zmiennych wcześniej, wystarczy to podczas użycia
+
+File 157
+Kod nie jest w żadnej funkcji ani w klasie
+Nazwy funkcji foo i mth zmienione zgodnie z poprawkami we wcześniejszym pliku
+Ściana tekstu należy dodać wolne lienie aby ułatwić czytanie kodu
+w 1 -> nazwa enumerate to nazwa wbudowanej funkcji, zmieniam aby uniknąc pomyłek
+        Dodatkowo jest prawie identyczna jak ta sama funkcja w file87, Usuwam
+w 4 -> wszystkie importy powinny być na początku pliku
+w 8-15 -> jedna komenda wpisana wielokrotnie zamiast użyć pętli, dodatkowo przedzielona inną linią
+        Oczywiście ona powoduje również błąd liczymy pi dla 5 wartości a chcemy wypisać 7
+w 16 -> nie mamy pojęcia jaki błąd wyłapaliśmy do tego sprawdzamy tylko cześć kodu
+w 18 -> nazwa zmiennej bez sensu nie zgadza się z przyjętym nazewnictwem
+        utrzymuje ciągłość nazewnictwa podobnie jak przy my_pi_1/2
+w 19 -> nazwa zmiennej nieużywana i kolosalenie za długa, dodatkowo wypisujemy tylko pierwwze 23 wyrazy, pytanie czy taki jest cel
+w 22 -> pi_gen ponownie nadajemy wartość, dla jasności i utrzymania nazewnictwa zmieniam na pi_gen_3
+w 23 -> możemy dodać całą listę nie musimy poszczególnych elementów
+w 28-30 -> Plik nie jest zamykany odpowiednio, lepiej używać "with" aby być pewnym że plik się zamknie dobrze nawet w ypadku błędów
+w 30 -> indeks -1 nie zwróci nam dobrej wartości
