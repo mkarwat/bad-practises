@@ -1,1 +1,0 @@
-my best pi: <generator object calculate_pi at 0x0000016CBD1DD540>
