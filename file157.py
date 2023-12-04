@@ -3,6 +3,7 @@ def enumerate(pi):
         print(f'Next element: {hello}')
 from file87 import *
 try:
+    
     my_pi = pi_container()
     pi_gen = foo(5)
     my_pi.mth(pi_gen.__next__())
