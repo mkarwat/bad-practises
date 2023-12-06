@@ -1,0 +1,26 @@
+File87
+Nazwy klas powinny byc pisane dużą literą i bez _ (PascalCase)
+Zmiana nazw zmiennych w funkcjach i klasach oraz samych funkcji na bardziej odpowiadające
+Usunięcie zminnych globalnych b i c, są używane tylko w funkcji foo
+Spacja powinna być po i przed każdym znakiem operacji
+Komentarz powinien być podzielony na mniejsze części w wielu liniach kodu, powinien zawierac uproszczone wyjasnienie oraz odnośniki do miejsca gdzie mozna to znalezc w dokumentacji
+Usuniecie niepotrzebnego print`a (All functions are defined)
+Usunięcie yield finish - niepotrzebne
+Zmienan nazwy plików, file157.py - main.py, file87.py - utils.py
+Zmianana nazwy zmiennej "hello" na bardziej odpowiadającą
+Zmiana nazwy enumerate na pi_enumerate poniewaz zastepowala wbudowana funkcje z biblioteki standardowej oraz przeniesienie jej do klasy PiContainer
+Zmiana klasy PiContainer, teraz nie przyjmuje żadnej wartości oraz tworzy pustą liste do której funkcja mth dodaje kolejne aproksymacje pi
+
+
+File157
+"import" powinien znajdować się w pierwszej linijce kodu
+Oddzielenie linijek kodu pustą linią
+Deklaracje zmiennych powinny być na początku kodu
+Usunięcie powtórzeń kodu, np. poprzez użycie pętli
+"Exception" powinny zawierać informacje co poszło nie tak, oraz powinien być typu "error"
+Zmiana nazwy zmiennej na "pIgEn3" na pasującą do reszty
+Usunięcie zbyt długiej i niepotrzebnej nazwa "the_variable_that_contains_next_approximations_of_pi_from_generator"
+Uzywnie .__next__, next() oraz [i for i in list(pi_gen)], powinno się trzymać jednej metody
+Operacje na pliku mogą być ograniczone do dwóch linijek kodu, oraz nazwa pliku powinna być adekwatna do zawratości
+
+
