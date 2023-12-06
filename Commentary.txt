@@ -1,0 +1,24 @@
+main
+#1. wywołanie funckji 7 razy w 7 liniach zamiast utworzenia pętli
+#2. Zdefiniowanie my_pi_2 w try, który może się nie wykonać
+#3. Za dużo wywołań metody mth (7), w porównaniu do argumentów wejściowych funkcji foo(5)
+#4. Niewłaściwa nazwa "pIgEn3"
+#5. Brak oddzieleń między linijkami, dla większej czytelności kodu
+#6. Zbyt długa nazwa zmiennej "the_variable_that_contains_next_approximations_of_pi_from_generator"
+#7. Użycie metody __next__, oraz next() i [i for i in list(pi_gen)], zamiast jednego
+#8. Podwójna deklaracja funkcji enumerate, oraz nazwa tej funkcji taka sama jak funkcji wbudowanej enumerate()
+#9. Aby wypisać najbardziej przybliżoną wartość pi w pliku, należy zmienić indeks na -2, bo -1 to "finished"
+#10. Nazwa klasy powinna zaczynać się od wielkiej litery
+
+utils
+#1. Usunięcie wejściowego argumentu a, z metody inicjalizującej __init__, oraz dodanie pustej listy
+#2. Niepotrzebna deklaracja zmiennych b i c na początku pliku, oraz deklaracja jako global w foo()
+#3. Deklaracja zapisana na 2 różne sposoby (spacje, oraz bez)
+#4. W pętlach for używamy nazw niepasujących do wykonywanej funkcji (hello)
+#5. Zbyt długi komentarz
+#6. Usunięcie yield 'finished'
+#7. Niepotrzebny komunikat All functions are defined
+#8. Zmiana nazwy hello na element
+#9. Zmiana nazwy funkcji enumerate, na my_enumerate, aby nie było kolizji nazw z funkcją wbudowaną enumerate()
+#10. Zmiana nazwy klasy na zaczynającą się z wielkiej litery i bez znaków specjalnych
+#11. Między definicjami funckji powinny być 2 linie odstępu, a nie 1
