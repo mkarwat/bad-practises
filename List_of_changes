@@ -1,0 +1,33 @@
+Rename file names:
+file157 -> main
+file87 -> PiContainer
+
+PiContainer.py:
+- rename class to CamelCase
+- removed variables b,c - declared only in function body
+- replace hello -> i in for loop
+- remove yield 'finished' - unnecessary
+- remove unnecessary comments
+- rename enumerate function to enum_pi - built-in name
+- move print to main
+- rename foo to calculate_pi - more specific name
+- replace type(x) -> isinstance
+
+main.py:
+- remove enumerate func - declared in second file
+- remove try and except - not necessary
+- rename pIgEn3 -> pi_gen_3 snakecase
+- rename unused and too long iterator to "i"
+- replace open -> with open
+- more specific import
+- move import into the top of file
+- declaration in main
+
+
+Dominik Górny
+Poniedziałek grupa 10:30
+
+
+
+
+
