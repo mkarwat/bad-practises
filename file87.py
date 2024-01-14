@@ -1,8 +1,5 @@
-b = 0
-c = 0
 
-
-class pi_container:
+class piContainer:
     def __init__(self, a=list()):
         self.a = a
 
@@ -11,25 +8,17 @@ class pi_container:
             self.a += x
         else:
             self.a.append(x)
-
-
-def foo(x):
-    global b
-    global c
+# this is a important operation in calculating pi that is
+# provided in a separate file in this repository,
+# please analyse this file before using!
+def calculate(x):
     b = 0
-    c=1
-    for hello in range(x):
-        if hello % 2 == 0:
-            b += 4 / c#this is a very important operation in calculateing pi according to documentation that is provided in a seperate file in this repository, please analyse this file before using!
+    c = 1
+    for i in range(x):
+        if i % 2 == 0:
+            b += 4 / c
         else:
             b -= 4 / c
         c += 2
         yield b
     yield 'finished'
-
-def enumerate(pi: pi_container):
-    for hello in pi.a:
-        print(hello)
-
-
-print('All functions are defined')

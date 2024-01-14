@@ -1,0 +1,12 @@
+1. zmiana nazw iteratorów
+2. usunięcie nadmiarowej funkcji
+3. usunięcie nadmiarowych printów, oraz nadmiarowych słów z printów(np something went horribly wrong)
+4. przeniesienie import na górę kodu i zmiana z importowania wszyskiego za pomocą "*" na import konktetnych funkcji
+5. poprawa ogólnej estetyki kodu (wcięcia w odpowiednich miejscach, odpowiednie ilości odstępu między blokami kodu)
+6. zmiana nazwy funkcji na bardziej zrozumiałą
+7. wstawienie pętli for zamiast kilku takich samych operacji pod rząd
+8. ususnięcie zmiennych globalnych
+9. ujednolicenie nazw zmiennych
+10. poprawienie komentarza, aby nie był jedną długą linijką, oraz skrócenie go by był bardziej zrozumiały
+11. poszerzenie try-except
+12. zmiana -1 na ":" przy zapisie pliku
