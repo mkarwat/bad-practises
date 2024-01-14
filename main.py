@@ -8,7 +8,6 @@ pi_gen = pi_generator(5)
 for i in range(8):
     my_pi.add(pi_gen.__next__())    
     
-
 pi_gen_2 = pi_generator(194)    
 for i in range(23):
     my_pi_2.add(next(pi_gen_2))
