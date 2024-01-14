@@ -24,7 +24,7 @@ def pi_generator(steps):
         yield b
     yield 'finished'
 
-def enumerate_pi(pi: pi_container):
+def pi_enumerate(pi: pi_container):
     for i in pi.a:
         print(i)
 
