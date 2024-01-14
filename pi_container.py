@@ -1,11 +1,10 @@
-class PiContainer:
-    def __init__(self, a=list()):
-        self.a = a
 
-    def mth(self, x):
-        if type(x) == list:
-            self.a += x
-        else:
+class PiContainer:
+    def __init__(self):
+        self.a = []
+
+    def add(self, x):
+        if type(x) is not list:
             self.a.append(x)
 
 
