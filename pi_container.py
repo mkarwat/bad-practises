@@ -16,7 +16,7 @@ def pi_generator(steps):
     b = 0
     c = 1
     for i in range(steps):
-        if hello % 2 == 0:
+        if i % 2 == 0:
             b += 4 / c
         else:
             b -= 4 / c
@@ -24,7 +24,7 @@ def pi_generator(steps):
         yield b
     yield 'finished'
 
-def pi_enumerate(pi: pi_container):
+def pi_enumerate(pi: PiContainer):
     for i in pi.a:
         print(i)
 
