@@ -1,5 +1,4 @@
-b = 0
-c = 0
+
 
 
 class pi_container:
@@ -14,8 +13,6 @@ class pi_container:
 
 
 def foo(x):
-    global b
-    global c
     b = 0
     c=1
     for hello in range(x):
