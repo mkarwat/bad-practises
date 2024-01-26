@@ -1,30 +1,33 @@
-def enumerate(pi):
-    for hello in pi.a:
-        print(f'Next element: {hello}')
-from file87 import *
+from headers.pi_appr_utils import PiContainer, generate_pi_series
+
+def display_pi_elements(pi_instance):
+    for element in pi_instance.elements:
+        print(f'Next PI approximation: {element}')
+
 try:
-    my_pi = pi_container()
-    pi_gen = foo(5)
-    my_pi.mth(pi_gen.__next__())
-    my_pi.mth(pi_gen.__next__())
-    my_pi.mth(pi_gen.__next__())
-    my_pi.mth(pi_gen.__next__())
-    my_pi_2 = pi_container()
-    my_pi.mth(pi_gen.__next__())
-    my_pi.mth(pi_gen.__next__())
-    my_pi.mth(pi_gen.__next__())
-except:
-    print('something went horribly wrong :(')
-pIgEn3 = foo(194)
-for the_variable_that_contains_next_approximations_of_pi_from_generator in range(23):
-    my_pi_2.mth(next(pIgEn3))
-my_pi_3 = pi_container()
-pi_gen = foo(6)
-my_pi_3.mth([i for i in list(pi_gen)])
-print('my first pi')
-enumerate(my_pi)
-print('my second pi')
-enumerate(my_pi_2)
-new_file = open('some-file.txt', 'w')
-new_file.write(f'my best pi: {my_pi_3.a[-1]}')
-new_file.close()
+    pi_series_1 = PiContainer()
+    pi_generator = generate_pi_series(5)
+
+    for _ in range(6):
+        pi_series_1.add_approximation(next(pi_generator))
+
+    pi_series_2 = PiContainer()
+
+    for _ in range(23):
+        pi_series_2.add_approximation(next(pi_generator))
+
+    pi_series_3 = PiContainer()
+    pi_generator = generate_pi_series(6)
+    pi_series_3.add_approximations(list(pi_generator))
+
+    print('Approximations from first series:')
+    display_pi_elements(pi_series_1)
+
+    print('Approximations from second series:')
+    display_pi_elements(pi_series_2)
+
+    with open('pi_approximations_summary.txt', 'w') as summary_file:
+        summary_file.write(f'Latest PI approximation: {pi_series_3.elements[-1]}')
+
+except Exception as error:
+    print(f'Error encountered: {error}')

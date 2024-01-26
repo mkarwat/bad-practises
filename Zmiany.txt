@@ -1,0 +1,12 @@
+Importy: bastąpiono importy z użyciem symbolu gwiazdki, aby uniknąć zanieczyszczania przestrzeni nazw.
+Nazewnictwo: zmiana nazw aby były bardziej zrozumiałe
+Kod Powtarzalny: bżycie pętli zamiast powtarzających się wywołań funkcji dla zwiększenia czytelności
+Użycie Generatorów: bezpośrednie użycie funkcji next() w pętli
+Konwersja Generatorów: niepotzrebna konwersja generatorów na listy
+Obsługa Plików: użycie instrukcji with
+Obsługa Błędów: obsługa wyjątków dla lepszego informowania o błędach
+Nazwy Klas i Metod: ulepszenia nazewnictwa klas i metod zgodnie z konwencją
+Zmienne Globalne: usunięcie niepotrzebnego użycia zmiennych globalnych w funkcjach
+Nadpisanie Funkcji enumerate: zmieniono nazwę funkcji, aby uniknąć konfliktu z wbudowaną funkcją enumerate
+Zmiana Nazwy Funkcji foo: zmiana nazwy, aby lepiej odzwierciedlić jej cel
+Zmiana Nazw Plików: zmiana nazwy plików na opisowe
