@@ -1,35 +1,21 @@
-b = 0
-c = 0
+class PiContainer:
+    def __init__(self):
+        self.elements = []
 
+    def add_approximation(self, approximation):
+        self.elements.append(approximation)
 
-class pi_container:
-    def __init__(self, a=list()):
-        self.a = a
+    def add_approximations(self, approximations_list):
+        self.elements.extend(approximations_list)
 
-    def mth(self, x):
-        if type(x) == list:
-            self.a += x
-        else:
-            self.a.append(x)
+def generate_pi_series(terms):
+    pi_base = 4.0
+    denominator = 1.0
+    pi_approximation = 0.0
 
-
-def foo(x):
-    global b
-    global c
-    b = 0
-    c=1
-    for hello in range(x):
-        if hello % 2 == 0:
-            b += 4 / c#this is a very important operation in calculateing pi according to documentation that is provided in a seperate file in this repository, please analyse this file before using!
-        else:
-            b -= 4 / c
-        c += 2
-        yield b
-    yield 'finished'
-
-def enumerate(pi: pi_container):
-    for hello in pi.a:
-        print(hello)
-
-
-print('All functions are defined')
+    for term_index in range(terms):
+        pi_term = pi_base / denominator
+        pi_approximation += pi_term if term_index % 2 == 0 else -pi_term
+        denominator += 2
+        yield pi_approximation
+    yield 'series_end'
