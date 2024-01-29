@@ -1,0 +1,29 @@
+class PiContainer:
+    def __init__(self, wartosci=None):
+        if wartosci is None:
+            wartosci = []
+            self.wartosci = wartosci
+
+
+    def ADD(self, zmienna):
+        if type(zmienna) == list:
+            self.wartosci += zmienna
+        else:
+            self.wartosci.append(zmienna)
+
+def foo(x):
+    b = 0
+    c = 1
+    for i in range(x):
+        if i % 2 ==0:
+            b += 4/c
+        else:
+            b -= 4/c
+            c += 2
+        yield b
+    yield 'finished'
+
+
+def print_pi(pi):
+    for x in pi.wartosci:
+        print(f'Next element: {x}')
