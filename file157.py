@@ -1,30 +1,36 @@
-def enumerate(pi):
-    for hello in pi.a:
-        print(f'Next element: {hello}')
-from file87 import *
+from my_pi import PiContainer, calc_pi
+
+def enumerate_pi(pi):
+    for next_pi in pi.my_pies:
+        print(f'Next element: {next_pi}')
+
+my_pi = PiContainer()
+limit = 5
 try:
-    my_pi = pi_container()
-    pi_gen = foo(5)
-    my_pi.mth(pi_gen.__next__())
-    my_pi.mth(pi_gen.__next__())
-    my_pi.mth(pi_gen.__next__())
-    my_pi.mth(pi_gen.__next__())
-    my_pi_2 = pi_container()
-    my_pi.mth(pi_gen.__next__())
-    my_pi.mth(pi_gen.__next__())
-    my_pi.mth(pi_gen.__next__())
-except:
-    print('something went horribly wrong :(')
-pIgEn3 = foo(194)
-for the_variable_that_contains_next_approximations_of_pi_from_generator in range(23):
-    my_pi_2.mth(next(pIgEn3))
-my_pi_3 = pi_container()
-pi_gen = foo(6)
-my_pi_3.mth([i for i in list(pi_gen)])
+
+    pi_gen = calc_pi(limit)
+
+    for next_pi in pi_gen:
+        my_pi.add_pi(next_pi)
+
+except ValueError:
+    print(f'unsupported value {limit}')
+
+my_pi_2 = PiContainer()
+pi_gen_3 = calc_pi(approx_level=194)
+
+needed_limit = 23
+for _ in range(needed_limit):
+    my_pi_2.add_pi(next(pi_gen_3))
+
+my_pi_3 = PiContainer()
+pi_gen = calc_pi(approx_level=6)
+my_pi_3.add_pi(list(pi_gen))
+
 print('my first pi')
-enumerate(my_pi)
+enumerate_pi(my_pi)
 print('my second pi')
-enumerate(my_pi_2)
-new_file = open('some-file.txt', 'w')
-new_file.write(f'my best pi: {my_pi_3.a[-1]}')
-new_file.close()
+enumerate_pi(my_pi_2)
+
+with open('some-file.txt', 'w') as new_file:
+    new_file.write(f'my best pi: {my_pi_3.best}')
