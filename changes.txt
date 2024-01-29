@@ -1,0 +1,31 @@
+Nazwy funkcji:
+Zmiana: Zastąpiono nazwę funkcji z enumerate na enumerate_pi.
+Dlaczego: Aby uniknąć konfliktów z nazwą wbudowanej funkcji enumerate i nadać funkcji bardziej zrozumiałą nazwę dla lepszej przejrzystości.
+
+Obsługa wyjątków:
+Zmiana: Wykorzystano konkretne typy wyjątków (ValueError, FileNotFoundError, EOFError) w osobnych blokach except.
+Dlaczego: Lepsza obsługa błędów poprzez precyzyjne wychwytywanie konkretnych wyjątków, ułatwiając identyfikację i obsługę różnych przypadków.
+
+Zapis pliku:
+Zmiana: Użyto menedżera kontekstu (z open) do zapisu plików.
+Dlaczego: Zapewnienie poprawnego zamknięcia pliku po zapisie, nawet w przypadku wystąpienia wyjątku. Jest to bardziej klarowny i zgodny z zasadami Pythona sposób manipulacji plikami.
+
+Nazwy funkcji i klas:
+Zmiana: Zastosowano bardziej opisowe nazwy, takie jak my_pi, my_pi_2, my_pi_3 i pi_gen dla instancji i generatorów.
+Dlaczego: Poprawa czytelności i przejrzystości kodu. Nazwy odzwierciedlające przeznaczenie zmiennych i poprawiają zrozumienie
+
+Użycie zmiennej:
+Zmiana: Przyjęto bardziej opisowe nazwy zmiennych, na przykład pi_gen w pętli.
+Dlaczego: Poprawa czytelności kodu i utrzymanie spójności.
+
+Zamykanie plików:
+Zmiana: Wykorzystano menedżera kontekstu (z open) do zapisu pliku, co skutkuje automatycznym zamknięciem pliku.
+Dlaczego: Redukcja ryzyka wycieku zasobów i uproszczenie obsługi plików. Zapewnienie poprawnego zamknięcia pliku, nawet gdy wystąpi wyjątek.
+
+Wcięcie:
+Zmiana: Zachowano spójne wcięcia w całym kodzie.
+Dlaczego: Spójne wcięcia przyczyniają się do lepszej czytelności kodu i są zgodne z zaleceniami stylu PEP 8.
+
+Wywołanie metody:
+Zmiana: Skorzystano z next(pi_gen) zamiast pi_gen.next(), aby uzyskać kolejny element z generatora.
+Dlaczego:  Jest bardziej zrozumiała i zgodna z konwencjami Pythona. Funkcja next() jest zalecanym sposobem pobierania następnego elementu z iteratora.

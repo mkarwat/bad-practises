@@ -1,35 +1,29 @@
-b = 0
-c = 0
+class PiContainer:
+    def __init__(self, my_pies: list(float) | None = None):
+        if my_pies is None:
+            self.my_pies = []
+        self.my_pies = my_pies
 
-
-class pi_container:
-    def __init__(self, a=list()):
-        self.a = a
-
-    def mth(self, x):
-        if type(x) == list:
-            self.a += x
+    def add_pi(self, next_pi: list(float) | float) -> None:
+        if isinstance(next_pi,list):
+            self.my_pies += next_pi
         else:
-            self.a.append(x)
+            self.my_pies.append(next_pi)
 
-
-def foo(x):
-    global b
-    global c
+def calc_pi(approx_level: int):
     b = 0
-    c=1
-    for hello in range(x):
-        if hello % 2 == 0:
-            b += 4 / c#this is a very important operation in calculateing pi according to documentation that is provided in a seperate file in this repository, please analyse this file before using!
+    c = 1
+    for i in range(approx_level):
+        if i % 2 == 0:
+            b += 4 / c
         else:
             b -= 4 / c
         c += 2
         yield b
-    yield 'finished'
 
-def enumerate(pi: pi_container):
-    for hello in pi.a:
-        print(hello)
+def enumerate_pi(pi: PiContainer):
+    for next_pi in pi.my_pies:
+        print(next_pi)
 
-
+#if __name__ = '__main__':
 print('All functions are defined')
