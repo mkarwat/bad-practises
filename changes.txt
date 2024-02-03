@@ -1,0 +1,21 @@
+Zmieniono nazwy plików
+
+PiContainer:
+    zmienne globalne b i c w funkcji foo zastąpiono zmiennymi lokalnymi
+    nazwa klasy zgodnie z CamelCase
+    inicjalizacja klasy - zmiana nazwy zmiennej a na myPies, przypisanie listy do myPies
+    metoda mth zamieniona na addPi
+    funkcja foo zmieniona na calcPi
+    usunięcie <yield "finished"> z calcPi
+    funkcja enumerate zmmieniona na printPies
+    iterator hello w printPies zmieniony na myPies
+    print opakowano klauzula if
+
+main:
+    import na poczatku pliku, nie importujemy wszystkiego
+    zapakowanie kodu w funkcje main
+    tworzenie obiektów przeniesione na poczatek funkcji main
+    generowanie pi w petli for zamiast kilkukrotnego wywolania funkcji
+    zdefiniowanie błędów w klauzuli try-except
+    zmiana iteratora nieuzywanego w petli na "_"
+    zamiana file open()... file close() na with open() as file
