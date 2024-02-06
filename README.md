@@ -11,10 +11,10 @@ Your task is to clone this repository, create a new branch, fix all the issues a
 
 ### Project fixes
 
-Comments in code contains information about what was improved nd why. 
+Comments in code contains information about what was improved and why. 
 
 List of fixes:
-- files names modified to main.py (main script) and pi_container.py (implements PiContainer class)
+- file names modified to main.py (main script) and pi_container.py (implements PiContainer class)
 - added .gitignore
 - naming according to python convention
 - main.py written in modular way

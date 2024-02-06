@@ -7,15 +7,12 @@ from pi_container import PiContainer, pi_generator, enumerate_pi
 #  script should be modular
 def first_pi():
     my_pi = PiContainer()  # object definition before try/except
+    lim = 5  # better to store important numbers in variables
+    iterations = 10
     try:
-        pi_gen = pi_generator(5)
-        my_pi.set_values(pi_gen.__next__())
-        my_pi.set_values(pi_gen.__next__())
-        my_pi.set_values(pi_gen.__next__())
-        my_pi.set_values(pi_gen.__next__())
-        my_pi.set_values(pi_gen.__next__())
-        my_pi.set_values(pi_gen.__next__())
-        my_pi.set_values(pi_gen.__next__())
+        pi_gen = pi_generator(lim)
+        for _ in range(iterations):
+            my_pi.set_values(pi_gen.__next__())
     except StopIteration as err:  # try/except should not be used with no errors after except
         print("Raised StopIteration error. ")  # proper message printing
     return my_pi
@@ -23,15 +20,18 @@ def first_pi():
 
 def second_pi():
     my_pi_2 = PiContainer()  # initialisation of new object in proper place
-    pi_gen_2 = pi_generator(194)
-    for _ in range(23):  # not used loop variable should be named as '_'
+    lim = 194
+    iterations = 23
+    pi_gen_2 = pi_generator(lim)
+    for _ in range(iterations):  # not used loop variable should be named as '_'
         my_pi_2.set_values(next(pi_gen_2))
     return my_pi_2
 
 
 def third_pi():
     my_pi_3 = PiContainer()
-    pi_gen_3 = pi_generator(6)  # proper name according to connection in this script
+    lim = 6
+    pi_gen_3 = pi_generator(lim)  # proper name according to connection in this script
     my_pi_3.set_values([i for i in list(pi_gen_3)])
     return my_pi_3
 
